@@ -1,6 +1,6 @@
-# to_do_app
+# ToDoApp
 
-A new Flutter project.
+A Flutter project for create and manage your personal to-do list.
 
 ## Getting Started
 
