@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:to_do_app/BottomNavBar/bottomNavBarProvider.dart';
 import 'package:to_do_app/Home/home_ui.dart';
 import 'package:to_do_app/Profile/profile_ui.dart';
+import 'package:to_do_app/global.dart';
 
 class BottomNavBar extends StatefulWidget {
   @override
@@ -22,6 +23,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return Scaffold(
       body: currentPage[provider.currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: bottomNavBarBG,
+        selectedItemColor: bottomNavSelect,
+        unselectedItemColor: bottomNavUnselect,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: provider.currentIndex,

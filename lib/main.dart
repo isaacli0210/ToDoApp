@@ -10,6 +10,12 @@ class ToDoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        focusColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+      ),
       home: ChangeNotifierProvider<BottomNavBarProvider>(
         child: BottomNavBar(),
         create: (BuildContext context) => BottomNavBarProvider(),
